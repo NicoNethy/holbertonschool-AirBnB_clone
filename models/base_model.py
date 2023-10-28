@@ -6,6 +6,7 @@ from models import storage
 
 class BaseModel():
 
+
     def __init__(self, *args, **kwargs):
 
         self.id = str(uuid4())
@@ -22,7 +23,6 @@ class BaseModel():
             storage.new(self)
 
     def __str__(self):
-        
         return f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
 
     def save(self):
