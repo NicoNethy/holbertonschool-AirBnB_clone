@@ -8,7 +8,7 @@ from models.base_model import BaseModel
 
 
 class testfile(unittest.TestCase):
-    
+
     def test_inheritance(self):
         self.assertTrue(issubclass(City, BaseModel))
 
