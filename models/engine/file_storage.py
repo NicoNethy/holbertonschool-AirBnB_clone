@@ -14,6 +14,7 @@ from models.review import Review
 import os.path
 from models.user import User
 
+
 class FileStorage:
     """ Clase FileStorage que serializa y
         deserializa instancias a JSON
