@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
-""" Class User """
+""" Clase User """
 from models.base_model import BaseModel
 
+
 class User(BaseModel):
-    """ Class user that inherits from BaseModel
-       Atributos de clase publicos:
-            first_name: (str) - user's first name
-            last_name: (str) - user's last name
-            password: (str) - user's password
-            email: (str) - user's email
+    """ Clase user que hereda de BaseModel
+
+    Atributos de clase publicos:
+        first_name: (str) - user's first name
+        last_name: (str) - user's last name
+        password: (str) - user's password
+        email: (str) - user's email
     """
+
     first_name = ""
     last_name = ""
     password = ""
@@ -17,8 +20,10 @@ class User(BaseModel):
 
     def __init__(self, *args, **kwargs):
         """ Inicializar la clase Usuario
-            Args:
-                *args: list of strings
-                **kwargs: dictionary of strings
-                """
+
+        Args:
+            *args: lista de cadenas de texto
+            **kwargs: diccionario de cadenas de texto
+        """
         super().__init__(*args, **kwargs)
+
