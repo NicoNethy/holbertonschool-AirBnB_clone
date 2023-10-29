@@ -26,4 +26,3 @@ class User(BaseModel):
             **kwargs: diccionario de cadenas de texto
         """
         super().__init__(*args, **kwargs)
-
