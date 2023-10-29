@@ -12,7 +12,7 @@ class Amenity(BaseModel):
 
     def __init__(self, *args, **kwargs):
         """ Initialize Amenity
-            Args: 
+            Args:
             *args: list of strings
             **kwargs: dictionary of strings
         """
