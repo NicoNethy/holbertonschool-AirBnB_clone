@@ -23,22 +23,22 @@ my_classes = {"BaseModel": BaseModel, "User": User, "State": State,
 
 
 class HBNBCommand(cmd.Cmd):
-   """- HBNBCommand(cmd.Cmd) es una clase que hereda de cmd.Cmd
+    """- HBNBCommand(cmd.Cmd) es una clase que hereda de cmd.Cmd
     cmd.Cmd es una clase que proporciona métodos para ejecutar un intérprete
     de comandos de la línea de comandos para un programa en Python.
-    
+
     - prompt es una cadena específica del intérprete que se muestra al usuario
       cuando están listos para ingresar un comando.
     - classes es una lista de todas las clases que heredan de BaseModel.
-    - my_objects es un diccionario de todas las instancias de las clases en classes.
+    - my_objects es un diccionario de todas las instancias
+    de las clases en classes.
     - my_classes es un diccionario con las clases.
     - storage es una instancia de FileStorage.
     - self es una instancia de HBNBCommand para usar los métodos de la clase.
     - args es una lista de argumentos pasados al comando.
-    - args_list es una lista de argumentos pasados al comando.
-"""
+    - args_list es una lista de argumentos pasados al comando. """
 
-    prompt = '(hbnb) '
+    prompt = '(hbnb)'
     classes = ["BaseModel",
                "User",
                "State",
