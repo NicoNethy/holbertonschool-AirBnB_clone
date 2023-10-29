@@ -14,8 +14,6 @@ from models.review import Review
 import os.path
 from models.user import User
 
-
-
 class FileStorage:
     """ Clase FileStorage que serializa y
         deserializa instancias a JSON
@@ -32,7 +30,7 @@ class FileStorage:
         """Devuelve un diccionario de todos los objetos
         """
         return self.__objects
-    
+
     def new(self, obj):
         """Coloca en __objects el objeto con la clave <obj class name>.id
         """
@@ -68,13 +66,13 @@ class FileStorage:
                     my_dict.items() y crear un diccionario de clave y valor.
                     """
                     new_object = key.split('.')
-                    class_name =  new_object[0]
+                    class_name = new_object[0]
                     """new_object es igual a key.split('.')[0]
                     esto divide la clave y toma la primera parte de la clave.
                     """
                     self.new(eval("{}".format(class_name))(**value))
-                    """Esta declaración if se utiliza para crear un nuevo objeto
-                    con el nombre de clase de new_object y su valor
+                    """Esta declaración if se utiliza para crear un nuevo
+                    objeto con el nombre de clase de new_object y su valor
                     """
         except FileNotFoundError:
             pass
