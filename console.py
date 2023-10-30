@@ -232,4 +232,3 @@ saves it (to the JSON file) and prints the id.
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
-    
