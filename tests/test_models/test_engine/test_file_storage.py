@@ -56,7 +56,7 @@ class TestFileStorage(unittest.TestCase):
     def test_reload(self):
         """check if reload method is working"""
 
-        self.assertIsNotNone(models.engine.file_storage.FileStorage().reload)
+        self.assertIsInstance(models.engine.file_storage.FileStorage().reload)
 
     def test_all_method(self):
         """check if all method is working"""
